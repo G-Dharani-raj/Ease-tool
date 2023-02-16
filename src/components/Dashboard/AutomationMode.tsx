@@ -14,7 +14,7 @@ import React from "react";
 
 const AutomationMode = () => {
 	return (
-		<Box width={"50%"}>
+		<Box width={{ base: "100%", lg: "50%" }}>
 			<Box
 				lineHeight={"2rem"}
 				background="ghostwhite"

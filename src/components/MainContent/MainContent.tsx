@@ -1,4 +1,4 @@
-import { HStack } from "@chakra-ui/react";
+import { Flex, HStack } from "@chakra-ui/react";
 import React from "react";
 import AutomationDetails from "../Dashboard/AutomationDetails";
 import AutomationMode from "../Dashboard/AutomationMode";
@@ -8,10 +8,10 @@ const MainContent = () => {
 	return (
 		<div>
 			<FolderSelect />
-			<HStack width={"100%"}>
+			<Flex width={"100%"} direction={{ base: "column", lg: "row" }}>
 				<AutomationMode />
 				<AutomationDetails />
-			</HStack>
+			</Flex>
 		</div>
 	);
 };
