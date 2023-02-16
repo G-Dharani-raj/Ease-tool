@@ -24,14 +24,15 @@ import {
 } from "@chakra-ui/react";
 import {
 	FiHome,
-	FiTrendingUp,
-	FiCompass,
-	FiStar,
 	FiSettings,
 	FiMenu,
 	FiBell,
 	FiChevronDown,
 } from "react-icons/fi";
+import { MdCreateNewFolder } from "react-icons/md";
+import { GiCargoCrane } from "react-icons/gi";
+import { TbReportAnalytics } from "react-icons/tb";
+import { RxExit } from "react-icons/rx";
 import { IconType } from "react-icons";
 import { ReactText } from "react";
 
@@ -41,10 +42,10 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
 	{ name: "Home", icon: FiHome },
-	{ name: "Trending", icon: FiTrendingUp },
-	{ name: "Explore", icon: FiCompass },
-	{ name: "Favourites", icon: FiStar },
-	{ name: "Settings", icon: FiSettings },
+	{ name: "Create New Project", icon: MdCreateNewFolder },
+	{ name: "Automation Board", icon: GiCargoCrane },
+	{ name: "Report Management", icon: TbReportAnalytics },
+	{ name: "Exit", icon: RxExit },
 ];
 
 export default function Sidebar({ children }: { children: ReactNode }) {
