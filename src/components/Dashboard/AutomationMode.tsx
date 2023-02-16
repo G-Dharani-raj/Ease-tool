@@ -14,12 +14,13 @@ import React from "react";
 
 const AutomationMode = () => {
 	return (
-		<>
+		<Box width={"50%"}>
 			<Box
 				lineHeight={"2rem"}
 				background="ghostwhite"
 				p={7}
 				borderRadius="lg"
+				my={5}
 			>
 				<Heading size={"md"}>AUTOMATION MODE</Heading>
 				<Text>Choose the Automation Mode :</Text>
@@ -51,7 +52,7 @@ const AutomationMode = () => {
 					</SimpleGrid>
 				</RadioGroup>
 			</Box>
-		</>
+		</Box>
 	);
 };
 

@@ -46,14 +46,14 @@ const TestSelectField = () => {
 		setTests(SAMPLE);
 	}, []);
 	return (
-		<>
+		<Box width={"100%"}>
 			<Checkbox isChecked={all} onChange={toggleAll}>
 				Select/Deselect
 			</Checkbox>
 			<Box height={300} bg="blackAlpha.300">
 				<Heading size="sm">Test Suites</Heading>
 				<Divider />
-				<VStack align={"flex-start"}>
+				<VStack align={"flex-start"} p={5}>
 					{tests.map((ele, i) => {
 						return (
 							<Checkbox
@@ -67,7 +67,7 @@ const TestSelectField = () => {
 					})}
 				</VStack>
 			</Box>
-		</>
+		</Box>
 	);
 };
 
